@@ -1,0 +1,40 @@
+body, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dd, dt, table, td, tr, textarea, form, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 12px;
+    font-family: microsoft yahei;
+    color: #484848;
+    cursor:default;
+}
+
+ul, ol, li {
+    list-style: none;
+}
+
+img {
+    border: none;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clearBoth {
+    clear: both;
+}
+
+a {
+    text-decoration: none;
+    color: #484848;
+}
+a:hover{
+    text-decoration: underline;
+    cursor:pointer;
+}
