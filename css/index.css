@@ -343,6 +343,9 @@ img{
     height:239px;
     border:1px solid #dadada;
 }
+#body #cont .cont_left .tabc div{
+    position:relative;
+}
 #body #cont .cont_left h2{
     height:38px;
     border-bottom:3px solid #ff6600;
@@ -385,7 +388,6 @@ img{
 }
 #body #cont .cont_left ul li div img {
     margin: 0 auto;
-
 }
 #body #cont .cont_left ul li div .hot_text{
     width:186px;

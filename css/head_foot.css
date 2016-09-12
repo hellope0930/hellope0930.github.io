@@ -333,7 +333,7 @@ a:hover{
 
 }
 #shopCart dl dt{
-    padding:0 13px 0 24px;
+    padding:0 10px 0 23px;
 }
 
 #shopCart dl dt a{
@@ -345,7 +345,7 @@ a:hover{
     text-decoration:none;
 }
 #shopCart dl dt a s{
-    width:10px;
+    width:5px;
     height:10px;
     display:inline-block;
 }
@@ -357,7 +357,7 @@ a:hover{
     color:#333;
 }
 #shopCart dl dd{
-    width:225px;
+    width:220px;
     height:87px;
     border:2px solid #ff6600;
     border-top:none;

@@ -3,8 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        .box{
+            width:20px;
+            height:20px;
+            background:#333;
+            position:fixed;
+            top:500px;
+            left:20px;
+        }
+        #Target{
+            width:200px;
+            height:200px;
+            position:fixed;
+            top:100px;
+            left:300px;
+            background:#eee;
+            overflow:hidden;
+        }
+    </style>
 </head>
-<body>
-22221111111
+<body style="height:2000px;">
+<div class="box">
+
+</div>
+<div id="Target"></div>
 </body>
+<script>
+    function fn(obj,target,speed,fn){
+        var  a=0.003;
+
+        var dis=0;
+
+        obj.timer=null;
+        //相对的坐标
+        var coord={
+            x:target.offsetLeft-obj.offsetLeft,
+            y:target.offsetTop-obj.offsetTop,
+        }
+
+        //求b系数
+        //y = ax2 + bx + c\\;
+        //var b= (y-ax2)/x;
+
+        //a不等于0   a > 0 开口向上  a < 0 开口向下
+
+        // y = ax^2 + bx
+
+        // (y - ax^2) / x = b
+
+        var b=(coord.y-a*coord.x*coord.x)/coord.x;
+
+        var yuandian={
+            left:obj.offsetLeft,
+            top:obj.offsetTop
+        }
+
+        obj.timer=setInterval(function(){
+
+            dis+=speed;
+            console.log(speed)
+
+            obj.style.left=yuandian.left+dis+"px";
+            obj.style.top=yuandian.top+a*dis*dis+b*dis+"px";
+
+            if(dis>=coord.x-10){
+                clearInterval(obj.timer);
+                obj.style.display = "none";
+                document.getElementsByClassName("box")[0].removeChild(obj);
+                obj.style.left=target.x+"px";
+                obj.style.top=target.y+"px";
+                fn&&fn();
+            }
+
+
+        },30)
+    }
+   document.getElementsByClassName("box")[0].onclick = function(){
+        var box1 = this.cloneNode(true);
+       document.getElementsByClassName("box")[0].appendChild(box1);
+        fn(box1,Target,30);
+
+    }
+</script>
 </html>
