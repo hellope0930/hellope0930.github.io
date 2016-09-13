@@ -428,7 +428,6 @@ function getStr($cookie){
          sum += parseInt(colArr[1]);
     }
     $("#shopCart .borderR dt a strong").text(sum==isNaN?0:sum).css({fontSize:"12px",display:"inline-block",width:20});
-    return sum;
 }
 var $cookie = $.cookie("shopcart");
 getStr($cookie);
