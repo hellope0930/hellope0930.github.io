@@ -427,13 +427,27 @@ function getStr($cookie){
         var colArr = rowArr[i].split("#");
          sum += parseInt(colArr[1]);
     }
+<<<<<<< HEAD
     return sum==isNaN?0:sum;
 }
 var $cookie = $.cookie("shopcart");
 var Num = getStr($cookie);
 //console.log(Num);
 $("#shopCart .borderR dt a strong").text(Num).css({fontSize:"12px",display:"inline-block",width:20});
+=======
+    if(sum==isNaN){
+        sum=0;
+    }else{
+       
+    }
+    $("#shopCart .borderR dt a strong").text(sum).css({fontSize:"12px",display:"inline-block",width:20});
+    return sum;
+}
+var $cookie = $.cookie("shopcart");
+>>>>>>> origin/master
 
+var Num = getStr($cookie);
+console.log(Num);
 ////////////////////////////////////
 
 $("#body #contain_hot .goods li").mouseover(function () {
