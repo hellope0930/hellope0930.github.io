@@ -37,7 +37,7 @@ $(function () {
         $(this).find("dd").css({display: "none"});
     })
     ///////banner部分
-    $.get("../json/slideBar.json").done(function (data) {
+    $.get("slideBar.json").done(function (data) {
         console.log(data);
         $.each(data, function (i, o) {
             var html = "";
@@ -265,7 +265,7 @@ $(function () {
 
     Time(date1, date2);
 
-    $.get("../json/banner.json").done(function (data) {
+    $.get("banner.json").done(function (data) {
         var html = "";
         $.each(data, function (i, o) {
             var oli = $("#ulPro li");
@@ -374,7 +374,6 @@ $(function () {
         getStr(rowArr.join("|"));
         return rowArr.join("|");
     }
-
     console.log($.cookie());
 });
 
