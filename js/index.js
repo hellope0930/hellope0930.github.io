@@ -24,7 +24,7 @@ $(function () {
     }*/
 
     var $user = $.cookie("username");
-   console.log($user);
+    //console.log($user);
         if(!$user){
             $("#userLogin").html("登录");
             //alert(":")
@@ -422,7 +422,7 @@ $(function () {
 
 function getStr($cookie){
     var sum = 0;
-    var rowArr = $cookie === ""?[]:$cookie.split("|");
+    var rowArr = $cookie === undefined?[]:$cookie.split("|");
     var newArr = [];
 
     for(var i = 0;i<rowArr.length;i++){
@@ -433,7 +433,7 @@ function getStr($cookie){
     return newArr;
 }
 var $cookie = $.cookie("shopcart");
-//console.log($cookie)
+console.log($cookie)
 getStr($cookie);
 ////////////////////////////////////
 
