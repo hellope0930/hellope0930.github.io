@@ -427,15 +427,12 @@ function getStr($cookie){
         var colArr = rowArr[i].split("#");
          sum += parseInt(colArr[1]);
     }
-    if(sum==isNaN){
-        sum=0;
-    }
-    $("#shopCart .borderR dt a strong").text(sum).css({fontSize:"12px",display:"inline-block",width:20});
-    return sum;
+    return sum==isNaN?0:sum;
 }
 var $cookie = $.cookie("shopcart");
-//console.log($cookie);
 var Num = getStr($cookie);
+//console.log(Num);
+$("#shopCart .borderR dt a strong").text(Num).css({fontSize:"12px",display:"inline-block",width:20});
 
 ////////////////////////////////////
 
