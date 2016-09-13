@@ -39,11 +39,11 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="429" column="27" selection-start-line="429" selection-start-column="27" selection-end-line="429" selection-end-column="27" />
+            <state relative-caret-position="234">
+              <caret line="429" column="61" selection-start-line="429" selection-start-column="61" selection-end-line="429" selection-end-column="61" />
               <folding>
-                <marker date="1473775347245" expanded="false" signature="5819:6488" ph="/*...*/" />
-                <marker date="1473775347245" expanded="false" signature="16733:17447" ph="/*...*/" />
+                <marker date="1473776506665" expanded="false" signature="5819:6488" ph="/*...*/" />
+                <marker date="1473776506665" expanded="false" signature="16728:17442" ph="/*...*/" />
               </folding>
             </state>
           </provider>
@@ -376,8 +376,8 @@
         <state relative-caret-position="8944">
           <caret line="344" column="13" selection-start-line="344" selection-start-column="13" selection-end-line="344" selection-end-column="13" />
           <folding>
-            <marker date="1473775347245" expanded="false" signature="5819:6488" ph="/*...*/" />
-            <marker date="1473775347245" expanded="false" signature="16733:17447" ph="/*...*/" />
+            <marker date="1473776506665" expanded="false" signature="5819:6488" ph="/*...*/" />
+            <marker date="1473776506665" expanded="false" signature="16728:17442" ph="/*...*/" />
           </folding>
         </state>
       </provider>
@@ -603,11 +603,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="429" column="27" selection-start-line="429" selection-start-column="27" selection-end-line="429" selection-end-column="27" />
+        <state relative-caret-position="234">
+          <caret line="429" column="61" selection-start-line="429" selection-start-column="61" selection-end-line="429" selection-end-column="61" />
           <folding>
-            <marker date="1473775347245" expanded="false" signature="5819:6488" ph="/*...*/" />
-            <marker date="1473775347245" expanded="false" signature="16733:17447" ph="/*...*/" />
+            <marker date="1473776506665" expanded="false" signature="5819:6488" ph="/*...*/" />
+            <marker date="1473776506665" expanded="false" signature="16728:17442" ph="/*...*/" />
           </folding>
         </state>
       </provider>
