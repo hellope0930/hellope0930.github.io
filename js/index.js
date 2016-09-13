@@ -430,9 +430,9 @@ function getStr($cookie){
     return sum==isNaN?0:sum;
 }
 var $cookie = $.cookie("shopcart");
-var Num = getStr($cookie);
+var Num1 = getStr($cookie);
 //console.log(Num);
-$("#shopCart .borderR dt a strong").text(Num).css({fontSize:"12px",display:"inline-block",width:20});
+$("#shopCart .borderR dt a strong").text(Num1).css({fontSize:"12px",display:"inline-block",width:20});
 
 ////////////////////////////////////
 
