@@ -5,6 +5,7 @@
     <title>商品列表</title>
     <link rel="stylesheet" href="../css/head_foot.css">
     <link rel="stylesheet" href="../css/itemlist.css">
+    <script src="https://cdn1.lncld.net/static/js/av-min-1.2.1.js"></script>
 </head>
 <body>
 <div id="top">
@@ -19,9 +20,9 @@
         </div>
         <div class="right">
                 <span class="sp_user">
-                    <a href="html/register.html" target="_blank">注册</a>
+                    <a href="../html/register.html" target="_blank">注册</a>
                     <b>|</b>
-                    <a href="">登录</a>
+                    <a id="userLogin" href="../html/login.html">登录</a>
                 </span>
             <span class="sp_welcome">
                     上午好,欢迎来新蛋购物！
@@ -83,7 +84,7 @@
             <s></s>
         </h3>
         <ul class="Nav">
-            <li class="marLeft"><a href="" title="首页">首页</a></li>
+            <li class="marLeft"><a href="../html/index.html" title="首页">首页</a></li>
             <li><a href="" title="限时抢购">限时抢购</a></li>
             <li><a href="" title="团团赚">团团赚</a></li>
             <li><a href="" title="海外代购">海外代购</a></li>
@@ -135,7 +136,7 @@
                 <strong>￥1499.00</strong>
             </p>
             <p class="payNow">
-                <a href="">
+                <a href="javascript:;">
                     立即抢购
                 </a>
             </p>
@@ -154,7 +155,7 @@
                 <strong>￥1499.00</strong>
             </p>
             <p class="payNow">
-                <a href="">
+                <a href="javascript:;">
                     立即抢购
                 </a>
             </p>
@@ -173,7 +174,7 @@
                 <strong>￥1499.00</strong>
             </p>
             <p class="payNow">
-                <a href="">
+                <a href="javascript:;">
                     立即抢购
                 </a>
             </p>
@@ -447,6 +448,7 @@
     </div>
 </div>
 <script src="../js/jquery-1.12.4.js"></script>
+<script src="../js/jquery.cookie.js"></script>
 <script src="../js/itemlist.js"></script>
 </body>
 </html>

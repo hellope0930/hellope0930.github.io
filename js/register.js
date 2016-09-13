@@ -26,9 +26,9 @@ $(function(){
     testObject.save({
         testabc: 'hello'
     }).then(function() {
-        alert('LeanCloud works!'); //数据已经存储 可以用这部分做留言本
+        alert('云服务已开启'); //数据已经存储 可以用这部分做留言本
     }).catch(function(err) {
-        alert('error:' + err);
+        alert("云服务未开启");
     });
   //生成四位数字的验证码
 
@@ -52,18 +52,19 @@ $(function(){
     var time;
     var open = true;
     var count = 0;
+
     $("#testCode").val(randomCode(4));
     $(".code_btn").click(function(){
-
+        console.log($("#textPhone1").val());
         count++;
         var $phone = $("#textPhone").val();
         if(/^1[3|4|5|7|8]\d{9}$/.test($phone)){
             if($("#regBox .code").val()==$("#testCode").val()){
                 var Num = $("#textPhone").val();
-                console.log(Num);
+               // console.log(Num);
                 var user = new AV.User();
-                user.set("username", "fsaf");
-                user.set("password", "123456");
+                user.set("username", ""+ $("#textPhone1").val()+"");
+                user.set("password",""+$("#textPhone2").val()+"");
                 user.setMobilePhoneNumber(Num);
                 user.signUp(null, "");
                 $(".code_btn").css({background:"orange",color:"#fff",fontSize:"20px"}).html("下一步");
@@ -76,8 +77,8 @@ $(function(){
                             if(num==0){
                                 $("#regBox .reg_con .reg_box .pho_code").val("获取验证码");
                                 $("#regBox .reg_con .reg_box .pho_code").click(function(){
-                                    user.set("username", "hjiang");
-                                    user.set("password", "123456");
+                                    user.set("username", ""+ $("#textPhone1").val()+"");
+                                    user.set("password", ""+ $("#textPhone2").val()+"");
                                     user.setMobilePhoneNumber(Num);
                                     user.signUp(null, "");
                                     alert("验证码已发送,请查收")

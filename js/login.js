@@ -15,7 +15,7 @@ $(function(){
         appKey: APP_KEY
     });
   $("#text").focus(function(){
-     if($(this).val()=="用户名/已验证手机或邮箱"){
+     if($(this).val()=="请输入已验证手机号"){
          $(this).val("");
      }
       $(this).css({color:"#000",fontSize:"14px"});
@@ -34,18 +34,25 @@ $(function(){
     $("#text").blur(function(){
         if($(this).val()==""){
             $(this).css({color:"#cfcfcf",fontSize:"12px"});
-            $(this).val("用户名/已验证手机或邮箱");
+            $(this).val("请输入已验证手机号");
         }
     });
    $("#loginBtn").click(function(){
         var num = $("#text").val();
         var password = $("#password").val();
+
         AV.User.logInWithMobilePhone(num, password).then(function (loginedUser) {
-            console.log(loginedUser);
-            alert("登陆成功")
+            location.href = "../index.html";
+            $.cookie("username",""+loginedUser.getUsername()+"",{
+                path:"/",
+                expire:7
+            });
+            alert("登陆成功");
         },(function (error) {
             alert("登录失败");
         }));
+       //console.log($.cookie("username"))
+
     })
 });
 

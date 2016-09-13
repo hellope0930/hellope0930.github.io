@@ -84,14 +84,23 @@ a:hover{
     background:url("../img/topbar.png") no-repeat 0 -58px;
 }
 #top #topMain .right{
-    width:507px;
+    width:547px;
     height:24px;
     line-height:24px;
 }
 #top #topMain .right .span_user{
     float:left;
     width:215px;
-    height:24px;line-height:24px;
+    height:24px;
+    line-height:24px;
+}
+#top #topMain .right #userLogin{
+    width:25px;
+    display:inline-block;
+
+}
+ #logout{
+  cursor:pointer;
 }
 #top #topMain .right a{
     color:#666;

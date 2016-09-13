@@ -2,6 +2,48 @@
  * Created by Administrator on 2016/9/5.
  */
 $(function () {
+    /////////////////////////////////////////////////////////
+    var APP_ID = 'hrpoTBTEP4jBUM8gcX56xA8c-gzGzoHsz'; //
+
+// 应用 Key，用来校验权限（Web 端可以配置安全域名来保护数据安全）
+    var APP_KEY = 'IwOCEpGXSaXY1PTnSl8HExc9'; //
+
+// 初始化
+    AV.init({
+        appId: APP_ID,
+        appKey: APP_KEY
+    });
+    /*var currentUser = AV.User.current();
+    if (currentUser) {
+        alert("ok");
+    }
+    else {
+        alert("未登录");
+        //location.href="../html/register.html";
+        //currentUser 为空时，可打开用户注册界面…
+    }*/
+
+    var $user = $.cookie("username");
+   console.log($user);
+        if(!$user){
+            $("#userLogin").html("登录");
+            //alert(":")
+        }else{
+            //alert(";")
+            var str = $("<span id=\"logout\">退出</span>");
+            $("#userLogin").parent().append(str);
+            $("#userLogin").attr("href","javascript:;");
+            $("#userLogin").html($user);
+        }
+    $("#logout").click(function(){
+        $.cookie("username","",{
+            path:"/"
+        });
+        AV.User.logOut(); //退出登录
+        alert("退出成功");
+        window.location.reload();
+    });
+    //////////////////////////////////////////////////////////////////////
     $("#top #topMain .right .asideHover").hover(function () {
         $(this).css({background: "#fff"});
         $(this).find(".inner").css({display: "block", zIndex: "10"})
@@ -38,7 +80,7 @@ $(function () {
     })
     ///////banner部分
     $.get("slideBar.json").done(function (data) {
-        console.log(data);
+        //console.log(data);
         $.each(data, function (i, o) {
             var html = "";
             html += "<li>" +
@@ -342,7 +384,8 @@ $(function () {
             $("#shopCart .borderR dt a strong").text(1);
         }
     });
-
+    var user = $.cookie("username");
+    //console.log(user);
     function addCart(str) {
         var $cookie = $.cookie("shopcart");
         if ($cookie) {
@@ -374,7 +417,7 @@ $(function () {
         getStr(rowArr.join("|"));
         return rowArr.join("|");
     }
-    console.log($.cookie());
+   // console.log($.cookie());
 });
 
 function getStr($cookie){
@@ -390,6 +433,7 @@ function getStr($cookie){
     return newArr;
 }
 var $cookie = $.cookie("shopcart");
+//console.log($cookie)
 getStr($cookie);
 ////////////////////////////////////
 
@@ -502,8 +546,8 @@ $("#body #mb20 .right .hotRank .tab a").hover(function () {
     var index = $(this).attr("tabIndex");
     $(this).parent().siblings("ul").css({display: "none"}).eq(index).css({display: "block"})
 });
-/////////////////////////////// ///////侧边栏导航
-console.log($(window).scrollTop());
+/////////////////////////////// ///////左侧边栏导航
+//console.log($(window).scrollTop());
 $(window).scroll(function () {
     if ($(this).scrollTop() < 800) {
         $("#navBar").css({display: "none"});
@@ -586,7 +630,8 @@ $("#shopBar p").hover(function () {
     $(this).css({borderRadius: "3px"});
     $(this).parent().find(".move").css({display: "none"})
 });
-/////////////////////////////////////////////////
+/////////////////////////////////////////////////判断是否登录状态
+
 
 
 
