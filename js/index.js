@@ -7,7 +7,6 @@ $(function () {
 
 // 应用 Key，用来校验权限（Web 端可以配置安全域名来保护数据安全）
     var APP_KEY = 'IwOCEpGXSaXY1PTnSl8HExc9'; //
-
 // 初始化
     AV.init({
         appId: APP_ID,
@@ -429,12 +428,14 @@ function getStr($cookie){
         var colArr = rowArr[i].split("#");
          sum += parseInt(colArr[1]);
     }
-    $("#shopCart .borderR dt a strong").text(sum).css({fontSize:"12px",display:"inline-block",width:20});
-    return newArr;
+    //console.log(sum)
+    return sum==isNaN?sum:0;
 }
 var $cookie = $.cookie("shopcart");
-console.log($cookie)
-getStr($cookie);
+
+var Num = getStr($cookie);
+console.log(Num);
+$("#shopCart .borderR dt a strong").text(Num).css({fontSize:"12px",display:"inline-block",width:20});
 ////////////////////////////////////
 
 $("#body #contain_hot .goods li").mouseover(function () {
