@@ -429,6 +429,8 @@ function getStr($cookie){
     }
     if(sum==isNaN){
         sum=0;
+    }else{
+       
     }
     $("#shopCart .borderR dt a strong").text(sum).css({fontSize:"12px",display:"inline-block",width:20});
     return sum;
