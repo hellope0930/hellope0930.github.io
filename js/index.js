@@ -427,7 +427,7 @@ function getStr($cookie){
         var colArr = rowArr[i].split("#");
          sum += parseInt(colArr[1]);
     }
-    return sum==isNaN?0:sum;
+    return sum==isNaN?sum:0;
 }
 var $cookie = $.cookie("shopcart");
 var Num1 = getStr($cookie);
