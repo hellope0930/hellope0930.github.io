@@ -434,9 +434,9 @@ function getStr($cookie){
     return sum;
 }
 var $cookie = $.cookie("shopcart");
-//console.log($cookie);
-var Num = getStr($cookie);
 
+var Num = getStr($cookie);
+console.log(Num);
 ////////////////////////////////////
 
 $("#body #contain_hot .goods li").mouseover(function () {
