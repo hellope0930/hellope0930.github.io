@@ -419,16 +419,20 @@ $(function () {
 });
 
 function getStr($cookie){
+
     var sum = 0;
     var rowArr = $cookie === undefined?[]:$cookie.split("|");
     var newArr = [];
 
     for(var i = 0;i<rowArr.length;i++){
         var colArr = rowArr[i].split("#");
+
          sum += parseInt(colArr[1]);
     }
-    $("#shopCart .borderR dt a strong").text(sum==isNaN?0:sum).css({fontSize:"12px",display:"inline-block",width:20});
+    //console.log("ok");
+    $("#shopCart .borderR dt a strong").text(sum).css({fontSize:"12px",display:"inline-block",width:20});
 }
+
 var $cookie = $.cookie("shopcart");
 getStr($cookie);
 //console.log(Num);
