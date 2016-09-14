@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="02fbda50-5ad7-4630-8a6b-da54f9e19cba" name="Default" comment="11">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/index.js" afterPath="$PROJECT_DIR$/js/index.js" />
     </list>
     <list id="da232f73-b584-417a-b2bf-264751210914" name="Rejected commit: Default" comment="11" />
@@ -40,11 +39,11 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
-              <caret line="435" column="2" selection-start-line="435" selection-start-column="2" selection-end-line="435" selection-end-column="2" />
+            <state relative-caret-position="325">
+              <caret line="428" column="8" selection-start-line="428" selection-start-column="8" selection-end-line="428" selection-end-column="8" />
               <folding>
-                <marker date="1473817849969" expanded="false" signature="5819:6488" ph="/*...*/" />
-                <marker date="1473817849969" expanded="false" signature="16793:17507" ph="/*...*/" />
+                <marker date="1473818009712" expanded="false" signature="5819:6488" ph="/*...*/" />
+                <marker date="1473818009712" expanded="false" signature="16738:17452" ph="/*...*/" />
               </folding>
             </state>
           </provider>
@@ -376,8 +375,8 @@
         <state relative-caret-position="8944">
           <caret line="344" column="13" selection-start-line="344" selection-start-column="13" selection-end-line="344" selection-end-column="13" />
           <folding>
-            <marker date="1473817849969" expanded="false" signature="5819:6488" ph="/*...*/" />
-            <marker date="1473817849969" expanded="false" signature="16793:17507" ph="/*...*/" />
+            <marker date="1473818009712" expanded="false" signature="5819:6488" ph="/*...*/" />
+            <marker date="1473818009712" expanded="false" signature="16738:17452" ph="/*...*/" />
           </folding>
         </state>
       </provider>
@@ -603,11 +602,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="435" column="2" selection-start-line="435" selection-start-column="2" selection-end-line="435" selection-end-column="2" />
+        <state relative-caret-position="325">
+          <caret line="428" column="8" selection-start-line="428" selection-start-column="8" selection-end-line="428" selection-end-column="8" />
           <folding>
-            <marker date="1473817849969" expanded="false" signature="5819:6488" ph="/*...*/" />
-            <marker date="1473817849969" expanded="false" signature="16793:17507" ph="/*...*/" />
+            <marker date="1473818009712" expanded="false" signature="5819:6488" ph="/*...*/" />
+            <marker date="1473818009712" expanded="false" signature="16738:17452" ph="/*...*/" />
           </folding>
         </state>
       </provider>
