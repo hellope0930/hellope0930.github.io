@@ -419,19 +419,21 @@ $(function () {
 });
 
 function getStr($cookie){
-
     var sum = 0;
-    var rowArr = $cookie === undefined?[]:$cookie.split("|");
+
+    var rowArr = $cookie === ""?[]:$cookie.split("|");
     var newArr = [];
 
     for(var i = 0;i<rowArr.length;i++){
         var colArr = rowArr[i].split("#");
-
-         sum += parseInt(colArr[1]);
+        colArr[1]==undefined?0:colArr[1];
+        console.log(colArr[1]==undefined?0:colArr[1]);
+         sum += (parseInt(colArr[1]));
     }
     $("#shopCart .borderR dt a strong").text(sum).css({fontSize:"12px",display:"inline-block",width:20});
 }
 var $cookie = $.cookie("shopcart");
+//console.log($cookie)
 getStr($cookie);
 ////////////////////////////////////
 
