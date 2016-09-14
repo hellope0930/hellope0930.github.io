@@ -39,11 +39,11 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="432" column="45" selection-start-line="432" selection-start-column="45" selection-end-line="432" selection-end-column="45" />
+            <state relative-caret-position="403">
+              <caret line="434" column="16" selection-start-line="434" selection-start-column="16" selection-end-line="434" selection-end-column="16" />
               <folding>
-                <marker date="1473815701451" expanded="false" signature="5819:6488" ph="/*...*/" />
-                <marker date="1473815701451" expanded="false" signature="16727:17441" ph="/*...*/" />
+                <marker date="1473816775668" expanded="false" signature="5819:6488" ph="/*...*/" />
+                <marker date="1473816775668" expanded="false" signature="16679:17393" ph="/*...*/" />
               </folding>
             </state>
           </provider>
@@ -177,10 +177,9 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1296" />
-    <option name="height" value="776" />
+    <option name="x" value="11" />
+    <option name="width" value="1248" />
+    <option name="height" value="721" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -302,10 +301,10 @@
     <option name="remove_strategy" value="false" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1296" height="776" extended-state="7" />
+    <frame x="11" y="0" width="1248" height="721" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.03984375" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.041396104" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -376,8 +375,8 @@
         <state relative-caret-position="8944">
           <caret line="344" column="13" selection-start-line="344" selection-start-column="13" selection-end-line="344" selection-end-column="13" />
           <folding>
-            <marker date="1473815701451" expanded="false" signature="5819:6488" ph="/*...*/" />
-            <marker date="1473815701451" expanded="false" signature="16727:17441" ph="/*...*/" />
+            <marker date="1473816775668" expanded="false" signature="5819:6488" ph="/*...*/" />
+            <marker date="1473816775668" expanded="false" signature="16679:17393" ph="/*...*/" />
           </folding>
         </state>
       </provider>
@@ -603,11 +602,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="432" column="45" selection-start-line="432" selection-start-column="45" selection-end-line="432" selection-end-column="45" />
+        <state relative-caret-position="403">
+          <caret line="434" column="16" selection-start-line="434" selection-start-column="16" selection-end-line="434" selection-end-column="16" />
           <folding>
-            <marker date="1473815701451" expanded="false" signature="5819:6488" ph="/*...*/" />
-            <marker date="1473815701451" expanded="false" signature="16727:17441" ph="/*...*/" />
+            <marker date="1473816775668" expanded="false" signature="5819:6488" ph="/*...*/" />
+            <marker date="1473816775668" expanded="false" signature="16679:17393" ph="/*...*/" />
           </folding>
         </state>
       </provider>

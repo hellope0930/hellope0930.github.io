@@ -429,15 +429,10 @@ function getStr($cookie){
 
          sum += parseInt(colArr[1]);
     }
-    //console.log("ok");
     $("#shopCart .borderR dt a strong").text(sum).css({fontSize:"12px",display:"inline-block",width:20});
 }
-
 var $cookie = $.cookie("shopcart");
 getStr($cookie);
-//console.log(Num);
-
-
 ////////////////////////////////////
 
 $("#body #contain_hot .goods li").mouseover(function () {
