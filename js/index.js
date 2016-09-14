@@ -420,11 +420,16 @@ $(function () {
 
 function getStr($cookie){
     var sum = 0;
-    var rowArr = $cookie === ""?[]:$cookie.split("|");
+    //$cookie==undefined?"":$cookie;
+    if($cookie==undefined||$cookie=="") {
+        var rowArr = [];
+    }else{
+        rowArr = $cookie.split("|");
+    }
     var newArr = [];
     for(var i = 0;i<rowArr.length;i++){
         var colArr = rowArr[i].split("#");
-        colArr[1]==undefined?0:colArr[1];
+        //colArr[1]==undefined?0:colArr[1];
          sum += (parseInt(colArr[1]));
     }
     $("#shopCart .borderR dt a strong").text(sum).css({fontSize:"12px",display:"inline-block",width:20});
